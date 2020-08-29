@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+
+.form1 {
+width:45%;
+margin:auto;
+margin-top:30px;
+}
+
+.sexo {
+    width:35%;
+}
+
+.form2 {
+    width:45%;
+    margin:auto;
+    margin-top:20px;
+    }
+
+.legendas {
+    color:rgb(75, 74, 74);
+    font-weight: bold;
+    font-size: 13pt;
+    font-family:sans-serif;
+}
+
+.form3 {
+    width:45%;
+    margin:auto;
+    margin-top:20px;
+    }
+
+.textarea3 {
+    width:99%;
+    height: 100px;
+}
+
+.form4 {
+    width:45%;
+    margin:auto;
+    margin-top:20px;
+}
+
+#botaoenviar {
+    margin-left:45%;
+    margin-right:45%;
+    margin-top:20px;
+}
+
+input, textarea {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 10pt;
+    background-color:rgb(255, 255, 255,.5);
+}
+
+input:hover, textarea:hover {
+    background-color: rgb(202, 201, 201);
+}
+
+fieldset#usuario {
+    background: url("../IMAGENS/icone-contato.png") no-repeat 95% 95%;
+}
+
+fieldset#endereco {
+    background: url("../IMAGENS/icone-endereco.png") no-repeat 95% 95%;
+    height:200px;
+}
+
+fieldset#mensagem {
+    background: url("../IMAGENS/icone-mensagem.png") no-repeat 95% 5%;
+}
+
+fieldset#pedido {
+    background: url("../IMAGENS/icone-pedido.png") no-repeat 95% 5%;
+}
+

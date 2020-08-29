@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotos</title>
+    <link rel="stylesheet" href="CSS/estilo.css" />
+    <link rel="stylesheet" href="CSS/fotos.css" />
+</head>
+<script>
+    function mudaFoto(foto) {
+        document.getElementById("icone").src = foto;
+    }
+</script>
+<body>
+    <div class="mainbody">
+        <header class="mainheader">
+            <div class="headertitle">
+                <h1>Google glass</h1>
+                <p>A revolução do Google está chegando</p>
+            </div>
+            <img id="icone" src="IMAGENS/fotos.png" />
+            <nav>
+                <ul class="mainlist">
+                    <li onmouseover="mudaFoto('IMAGENS/home.png')" onmouseout="mudaFoto('IMAGENS/fotos.png')"><a href="index.html">HOME</a></li>
+                    <li onmouseover="mudaFoto('IMAGENS/especificacoes.png')" onmouseout="mudaFoto('IMAGENS/fotos.png')"><a href="specs.html">ESPECIFICAÇÔES</a></li>
+                    <li onmouseover="mudaFoto('IMAGENS/fotos.png')" onmouseout="mudaFoto('IMAGENS/fotos.png')"><a href="fotos.html">FOTOS</a></li>
+                    <li onmouseover="mudaFoto('IMAGENS/multimidia.png')" onmouseout="mudaFoto('IMAGENS/fotos.png')"><a href="multimidia.html">MULTIMÍDIA</a></li>
+                    <li onmouseover="mudaFoto('IMAGENS/contato.png')" onmouseout="mudaFoto('IMAGENS/fotos.png')"><a href="fale-conosco.html">FALE CONOSCO</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="divheaders">
+            <h3>Glass > Fotos</h3>
+            <h1 id="fontes">Galeria de Imagens do Google Glass</h1>
+            <h2>por Gustavo Guanabara</h2>
+            <h3 class="atualizado2">Finalizado em 26/Agosto/2020</h3>
+            </div>
+
+        <p class="mainparaspecs">Veja na nossa galeria de fotos várias belas imagens que mostram algumas das principais
+            características do Google Glass, como recursos e propriedades que estão impressionando o mundo inteiro.
+            Basta passar o mouse sobre uma das fotos para ver uma versão ampliada e com uma breve descrição.</p>
+
+        <ul id="album-fotos">
+           <li id="foto01"><span>Agenda e lembretes</span></li>
+           <li id="foto02"><span>Sergey Brin usando o Glass</span></li>
+           <li id="foto03"><span>Leve e compacto</span></li>
+           <li id="foto04"><span>Sensação de uma tela de 50</span></li>
+           <li id="foto05"><span>Vários tipos de lente</span></li>
+           <li id="foto06"><span>Informações importantes</span></li>
+        </ul>
+
+        <footer class="main-footer">
+            <p> &copy; <em>Copyright 2013 - by Gustavo Guanabara Facebook</em></p>
+            <a class="extlinks" href="https://facebook.com" target="_blank">Facebook</a> | <a class="extlinks"
+                href="https://instagram.com" target="_blank">Instagram</a>
+        </footer>
+    </div>
+</body>
+
+</html>

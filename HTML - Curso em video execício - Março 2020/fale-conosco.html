@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale-Conosco</title>
+    <link rel="stylesheet" href="CSS/estilo.css" />
+    <link rel="stylesheet" href="CSS/form.css" />
+</head>
+<script>
+    function mudaFoto(foto) {
+        document.getElementById("icone").src = foto;
+    }
+</script>
+<body>
+    <div class="mainbody">
+        <header class="mainheader">
+            <div class="headertitle">
+                <h1>Google glass</h1>
+                <p>A revolução do Google está chegando</p>
+            </div>
+            <img id="icone" src="IMAGENS/contato.png" />
+            <nav>
+                <ul class="mainlist">
+                    <li onmouseover="mudaFoto('IMAGENS/home.png')" onmouseout="mudaFoto('IMAGENS/contato.png')"><a href="index.html">HOME</a></li>
+                    <li onmouseover="mudaFoto('IMAGENS/especificacoes.png')" onmouseout="mudaFoto('IMAGENS/contato.png')"><a href="specs.html">ESPECIFICAÇÔES</a></li>
+                    <li onmouseover="mudaFoto('IMAGENS/fotos.png')" onmouseout="mudaFoto('IMAGENS/contato.png')"><a href="fotos.html">FOTOS</a></li>
+                    <li onmouseover="mudaFoto('IMAGENS/multimidia.png')" onmouseout="mudaFoto('IMAGENS/contato.png')"><a href="multimidia.html">MULTIMÍDIA</a></li>
+                    <li onmouseover="mudaFoto('IMAGENS/contato.png')" onmouseout="mudaFoto('IMAGENS/contato.png')"><a href="fale-conosco.html">FALE CONOSCO</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="divheaders">
+        <h3>Fale Conosco > Contato</h3>
+        <h1 id="fontes">Formulário de Contato</h1>
+        <h2>por Gustavo Guanabara</h2>
+        <h3 class="atualizado2">Finalizado em 26/Agosto/2020</h3>
+        </div>
+        <form class="form1">
+            <fieldset id="usuario"> 
+                <legend class="legendas">Identificação do usuário</legend>
+                </br>
+
+                <label for="user">Nome:</label>
+                <input type="test" name="user" id="user" placeholder="Nome Completo"></br>
+                </br>
+                <label for="password">Senha:</label>
+                <input type="number" name="password" id="password" placeholder="8 digitos"></br>
+                </br>
+
+                <hr>
+                </br>
+
+                <label for="mail">E-mail:</label>
+                <input type="email" name="mail" id="mail" placeholder="Separe por virgulas"></br>
+                </br>
+
+                <!--para o radio buttom clicar somente um por vez e não permitir o user clicar 2 ao mesmo tempo, é necessário que as opções tenham o mesmo name como atributo -->
+                <fieldset class="sexo">
+                    <legend class="legendas">Sexo</legend>
+                    <input type="radio" name="gender" value="Male" checked id="male">
+                    <label for="male">Masculino</label>
+                    </br>
+                    <input type="radio" name="gender" value="Female" id="female">
+                    <label for="female">Feminino</label>
+                </fieldset>
+                </br>
+
+                <label for="nascimento">Data de nascimento:</label>
+                <input type="date" id="nascimento">
+                </br>
+                </br>
+
+            </fieldset>
+        </form>
+
+        <form class="form2">
+            <fieldset id="endereco">
+                <legend class="legendas">Endereço</legend>
+                </br>
+                <label for="address">Logradouro</label>
+                <input type="text" class="address" id="address" placeholder="Rua, Av, Trav, ...">
+
+                <label for="numero">Numero</label>
+                <input type="number" class="numero" id="numero">
+                </br>
+                </br>
+                <label for="estado">Estado</label>
+                <select Name="Estado" class="estado" id="estado">
+                    <optgroup label="Região sudeste">
+                        <option>Rio de Janeiro</option>
+                        <option>São Paulo</option>
+                    </optgroup>
+                    <optgroup label="Região nordeste">
+                        <option selected>Bahia</option>
+                    </optgroup>
+                </select>
+                </br>
+                </br>
+                <label for="city">Cidade</label>
+                <input type="text" class="city" id="city" placeholder="Sua cidade">
+                </br>
+                </br>
+            </fieldset>
+        </form>
+
+        <form class="form3">
+            <fieldset id="mensagem">
+                <legend class="legendas">Mensagem</legend>
+                </br>
+                <label for="range">Grau de urgência: </label><span>Min</span>
+                <input type="range" name="range" class="range" id="range" min="0" max="10">
+                <span>Max</span>
+                </br>
+                </br>
+                <label for="minhames">Mensagem</label></br>
+                <textarea placeholder="Sua mensagem..." class="textarea3" name="minhames" id="minhames"></textarea>
+                </br>
+                </br>
+            </fieldset>
+        </form>
+
+        <form class="form4">
+            <fieldset id="pedido">
+                <legend class="legendas">Quero um Google Glass</legend>
+                </br>
+                <input type="radio" id="checkbox">
+                <label for="checkbox">Gostaria de adquirir um Google Glass &copy; quando disponível</label>
+                </br>
+                </br>
+                <label for="cor">Cor:</label>
+                <input type="color" id="cor" value="#425bc2"/>
+                </br>
+                </br>
+                <label for="quantity">Quantidade:</label>
+                <input type="number" id="quantity" min="0" max="5" value="0"/>
+                </br>
+                </br>
+                <label for="preço">Preço total: R$</label>
+                <input type="text" id="preço" placeholder="Total a pagar" readonly>
+                </br>
+                </br>
+            </fieldset>
+        </form>
+        <input type="image" src="IMAGENS/botao-enviar.png" id="botaoenviar"/>
+        <footer class="main-footer">
+            <p> &copy; <em>Copyright 2013 - by Gustavo Guanabara Facebook</em></p>
+            <a class="extlinks" href="https://facebook.com" target="_blank">Facebook</a> | <a class="extlinks"
+                href="https://instagram.com" target="_blank">Instagram</a>
+        </footer>
+    </div>
+</body>
+</html>

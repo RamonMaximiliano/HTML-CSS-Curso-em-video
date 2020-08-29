@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimidia</title>
+    <link rel="stylesheet" href="CSS/estilo.css" />
+</head>
+<script>
+    function mudaFoto(foto) {
+        document.getElementById("icone").src = foto;
+    }
+</script>
+<body>
+    <div class="mainbody">
+        <header class="mainheader">
+            <div class="headertitle">
+                <h1>Google glass</h1>
+                <p>A revolução do Google está chegando</p>
+            </div>
+            <img id="icone" src="IMAGENS/multimidia.png" />
+            <nav>
+                <ul class="mainlist">
+                    <li onmouseover="mudaFoto('IMAGENS/home.png')" onmouseout="mudaFoto('IMAGENS/multimidia.png')"><a href="index.html">HOME</a></li>
+                    <li onmouseover="mudaFoto('IMAGENS/especificacoes.png')" onmouseout="mudaFoto('IMAGENS/multimidia.png')"><a href="specs.html">ESPECIFICAÇÔES</a></li>
+                    <li onmouseover="mudaFoto('IMAGENS/fotos.png')" onmouseout="mudaFoto('IMAGENS/multimidia.png')"><a href="fotos.html">FOTOS</a></li>
+                    <li onmouseover="mudaFoto('IMAGENS/multimidia.png')" onmouseout="mudaFoto('IMAGENS/multimidia.png')"><a href="multimidia.html">MULTIMÍDIA</a></li>
+                    <li onmouseover="mudaFoto('IMAGENS/contato.png')" onmouseout="mudaFoto('IMAGENS/multimidia.png')"><a href="fale-conosco.html">FALE CONOSCO</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="divheaders">
+            <h3>Glass > Multimidia</h3>
+            <h1 id="fontes">Sons e Videos</h1>
+            <h2>por Gustavo Guanabara</h2>
+            <h3 class="atualizado2">Finalizado em 26/Agosto/2020</h3>
+            </div>
+        <div class="mediadupla">
+            <video controls class="mediaduplavideo">
+                <source src="MEDIA/one-day.mp4" type="video/mp4">
+            </video>
+            <audio controls class="mediaduplaaudio">
+                <source src="MEDIA/2009-lovers-carvings-bibio.mp3" type="audio/mp3">
+            </audio>
+        </div>
+        <footer class="main-footer">
+            <p> &copy; <em>Copyright 2013 - by Gustavo Guanabara Facebook</em></p>
+            <a class="extlinks" href="https://facebook.com" target="_blank">Facebook</a> | <a class="extlinks"
+                href="https://instagram.com" target="_blank">Instagram</a>
+        </footer>
+    </div>
+</body>
+
+</html>

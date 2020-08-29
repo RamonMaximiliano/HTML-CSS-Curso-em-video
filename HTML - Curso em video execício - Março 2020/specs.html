@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especificações</title>
+    <link rel="stylesheet" href="CSS/estilo.css" />
+    <link rel="stylesheet" href="CSS/specs.css" />
+</head>
+<script>
+    function mudaFoto(foto) {
+        document.getElementById("icone").src = foto;
+    }
+</script>
+
+<body>
+    <div class="mainbody">
+        <header class="mainheader">
+            <div class="headertitle">
+                <h1>Google glass</h1>
+                <p>A revolução do Google está chegando</p>
+            </div>
+            <img id="icone" src="IMAGENS/especificacoes.png" />
+            <nav>
+                <ul class="mainlist">
+                    <li onmouseover="mudaFoto('IMAGENS/home.png')" onmouseout="mudaFoto('IMAGENS/especificacoes.png')">
+                        <a href="index.html">HOME</a></li>
+                    <li onmouseover="mudaFoto('IMAGENS/especificacoes.png')"
+                        onmouseout="mudaFoto('IMAGENS/especificacoes.png')"><a href="specs.html">ESPECIFICAÇÔES</a></li>
+                    <li onmouseover="mudaFoto('IMAGENS/fotos.png')" onmouseout="mudaFoto('IMAGENS/especificacoes.png')">
+                        <a href="fotos.html">FOTOS</a></li>
+                    <li onmouseover="mudaFoto('IMAGENS/multimidia.png')"
+                        onmouseout="mudaFoto('IMAGENS/especificacoes.png')"><a href="multimidia.html">MULTIMÍDIA</a>
+                    </li>
+                    <li onmouseover="mudaFoto('IMAGENS/contato.png')"
+                        onmouseout="mudaFoto('IMAGENS/especificacoes.png')"><a href="fale-conosco.html">FALE CONOSCO</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="corpo-full">
+            <article id="noticia-principal">
+            <div class="divheaders">
+                <h3>Glass > Especificações</h3>
+                <h1 id="fontes">Raio-X no Google Glass</h1>
+                <h2>por Gustavo Guanabara</h2>
+                <h3 class="atualizado2">Finalizado em 26/Agosto/2020</h3>
+            </div>
+
+            <p class="mainparaspecs">Clique em qualquer área destacada da imagem para ter mais informações sobre os
+                recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.<br><br>
+            <strong> Clique nas partes rosas da imagem abaixo.</strong>
+            </p>
+        <section id="conteudo">
+            <img src="IMAGENS/glass-esquema-marcado.jpg" usemap="#meumapa">
+            <map name="meumapa">
+                <area shape="rect" coords="179,202,270,260" href="map.html#tela" target="janela"/>
+                <area shape="circle" coords="158,243,12" href="map.html#camera" target="janela"/>
+                <area shape="circle" coords="73,52,12" href="map.html#gadgets" target="janela"/>
+                <area shape="poly" coords="25,143,83,216,84,249,27,169" href="map.html#sensores" target="janela"/>
+            </map> 
+            <!--  quando o shape é circulo, as cordenadas são o centro do circulo e o raio para direita, ou seja metade do tamanho horizontal do circulo-->
+            <iframe src="map.html" name="janela" id="frame-spec"></iframe>
+        </section>
+
+    </article>
+        </section>
+        <footer class="main-footer">
+            <p> &copy; <em>Copyright 2013 - by Gustavo Guanabara Facebook</em></p>
+            <a class="extlinks" href="https://facebook.com" target="_blank">Facebook</a> | <a class="extlinks"
+                href="https://instagram.com" target="_blank">Instagram</a>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,329 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'FonteLogo';
+    src: url("../FONTS/computer-font.ttf");
+}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&display=swap');
+
+body { background-color: rgb(209, 209, 209);
+}
+
+.mainlist {
+    list-style: none;
+    text-align:right;
+    margin-right: 30px;
+    flex-wrap: wrap;
+    display: block;
+    position: absolute;
+    top:0px;
+    left:30%;
+    right:15%;
+}
+
+.mainlist li {
+    background: none;
+    display: inline-block;
+    padding: 10px;
+    margin-right: 5px;
+    margin-top:20px;
+    background-color: rgb(209, 209, 209);
+    transition: background-color 0.5s;
+}
+
+.mainlist li:hover { 
+    background-color: rgb(163, 162, 162);
+}
+
+.mainlist a {
+    color: black;
+    text-decoration:none;
+    font-weight: bold;
+}
+
+.mainlist a:hover {
+    color: white;
+}
+
+.headertitle { 
+    margin-left:20px;
+}
+
+.headertitle h1{
+    font-family: Arial, sans-serif;
+    font-size:50px;
+    text-shadow: 1px 1px 2px black;
+    padding-top: 10px;
+    margin-bottom:0px;
+}
+
+.headertitle p{
+    font-family: 'FonteLogo', sans-serif;
+    font-size:30px;
+    padding: 5px;
+    margin-top:15px;
+}
+
+.mainbody {
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 black,0 6px 20px 0 black;
+}
+
+.main-footer {
+    clear:both;
+    text-align:center;
+    padding-bottom:20px;
+    border-top: 2px solid black;
+}
+
+.main-footer a:hover{
+text-decoration:underline;
+}
+
+.backgroundtitle {
+    background-color: rgb(209, 209, 209);
+    padding:5px;
+}
+
+.title2 {
+    padding:8px;
+    background-color: rgb(131, 129, 129);
+    color: white;
+    font-size: 15pt;
+}
+
+.mainsection {
+    width:50%;
+    padding:30px;
+    display:block;
+    float:left;
+    border-right: solid black;
+}
+
+.asidetext { 
+    width:40%;
+    margin-right:20px;
+    margin-top:20px;
+    display:block;
+    padding-left:10px;
+    float:right;
+    padding:10px;
+    background-color: rgb(209, 209, 209);
+}
+
+@media (max-width: 1550px){
+    .mainsection {
+        float:none;
+        width:95%;
+        border-right:none;
+    }
+    .asidetext {
+        float:none;
+        width:95%;}
+    }
+
+.meuvideo {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table1 {
+    border: 1px solid black;
+    border-spacing:0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table1 td { 
+    border: 1px solid black;
+    padding: 8px;
+    margin: 0px;
+}
+
+.table1 caption {
+    color:rgb(124, 124, 124);
+    font-weight:bolder;
+    font-size:20px;
+}
+
+
+.table1 span {
+    color:black;
+    font-size:15px;
+    display:block;
+    float: right;
+
+}
+
+.table1 td.esquerda {
+    color:white;
+    background-color: gray;
+    font-weight: bolder;
+    font-size: 15px;
+    vertical-align: top;
+    text-align: center;
+}
+
+.table1 td.direita {
+    background-color: rgb(197, 195, 195);
+}
+
+.atualizado {
+    text-align: right;
+}
+
+.atualizado2 {
+    text-align: right;
+    margin-right:10px;
+}
+
+.paragrafospecs {
+    margin-left:30px;
+}
+.titulosspecs {
+    margin-left:30px;
+}
+.mainparaspecs {
+    margin:20px;
+    text-indent:30px;
+}
+.mainparagrafo {
+    text-indent:30px;
+}
+
+/* 
+Se não tiver o ponto e barra ( ./ ) antes do path da foto, a mesma não será mostrada no browser sem o live server ativado ("./imagens/city/picture1.jpeg").
+As vezes dependendo a pasta da foto são necessários dois pontos para ela aparecer(background: url("../IMAGENS/radio-tv.png").
+A princípio, cada ponto significa uma pasta.
+*/
+
+.mediadupla {
+    background: url("../IMAGENS/radio-tv.png") no-repeat;
+    width: 950px;
+    height: 810px;
+    background-size: 100%;
+    box-sizing: border-box;
+    margin:auto;
+}
+
+.mediaduplavideo {
+    box-sizing: border-box;
+    display:block;
+    position:relative;
+    width:480px;
+    height: 280px;
+    top:110px;
+    left:80px;
+    border-radius: 20px;
+}    
+
+.mediaduplaaudio {
+    box-sizing: border-box;
+    display:block;
+    position:relative;
+    width:320px;
+    top:240px;
+    left:605px;
+    border-radius: 20px;
+}
+
+figure.foto-legenda {
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+}
+
+figure.foto-legenda img {
+width:100%;
+height: 100%;
+}
+
+figure.foto-legenda figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.479);
+    color: white;
+    width:100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+figure.foto-legenda:hover figcaption {
+    opacity: 1;
+}
+
+#icone {
+    position: absolute;
+    left:70%;
+    top:10%;
+}
+
+.mainheader {
+    border-bottom: 2px black solid;
+    height: 200px;
+    background: url("../IMAGENS/glass-logo-peq.jpg") no-repeat 20px 130px;
+}
+
+/* o ponto ponto na ural volta uma pasta no projeto.   
+background: url("./imagens/city/picture2.jpeg");   */
+
+#fontes {
+    font-family:'Dancing Script',cursive;
+}
+
+.extlinks {
+    text-decoration:none;
+    color: blue;
+}
+
+.cabecalhomain h1{
+    font-family:'FonteLogo', sans-serif;
+    font-size:25px;
+    color:rgb(95, 94, 94);
+    margin-top:5px;
+    margin-bottom:10px;
+}
+
+.cabecalhomain h2{
+    font-size:20px;
+    color:rgb(112, 110, 110);
+    margin-top:5px;
+}
+
+.cabecalhomain h3{
+    font-size:15;
+    margin-top:-20px;
+    color:rgb(112, 110, 110);
+}
+
+
+.divheaders {
+    margin-top: 30px;
+    padding-left:30px;
+}
+
+.divheaders h1{
+    font-family:'FonteLogo', sans-serif;
+    font-size:25px;
+    color:rgb(95, 94, 94);
+    margin-top:5px;
+    margin-bottom:10px;
+}
+
+.divheaders h2{
+    font-size:20px;
+    color:rgb(112, 110, 110);
+    margin-top:5px;
+}
+
+.divheaders h3{
+    font-size:15;
+    margin-top:-20px;
+    color:rgb(112, 110, 110);
+    padding-right:10px;
+}
