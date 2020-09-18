@@ -1,4 +1,3 @@
 # My first repository - July 2020
- Curso em video
+ Curso em video - July 2020
 
- Esta é uma nova linha!
