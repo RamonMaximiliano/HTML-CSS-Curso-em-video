@@ -1,4 +1,6 @@
-# My first repository - July 2020
+# My first repository
+
+Aug 28, 2020
 
 ## Html - Css - JavaScript
 
